@@ -1,0 +1,6 @@
+Open Command Pallete
+    Shift +Command+P
+
+1) File Icon
+    vscode-Icon
+2) 

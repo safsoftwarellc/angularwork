@@ -1,0 +1,50 @@
+<div class="main-grid">
+    <div class="top">
+        <div class="col1">
+            <app-top-image></app-top-image>
+        </div>
+        <div class="col2">
+            <app-top-text></app-top-text>
+        </div>
+        <div class="col3">
+           <app-topsection></app-topsection>
+        </div>>
+    </div>
+    <app-leftmenu menu="ORDER"></app-leftmenu>
+    <div class="right">
+        <div class="body-grid">
+            <h1 class="heading">Order details</h1>
+            <div class="order-info">
+                <h3>Order#{{order_number}}</h3>
+                <table class="order-table">
+                    <tr class="order-row first-row">
+                        <th class="order-col col-heading">Item Details</th>
+                        <th class="order-col col-heading">Qty</th>
+                        <th class="order-col col-heading">Price</th>
+                    </tr>
+
+                    <tr class="order-row" *ngFor="let order of order_info">
+                        <td class="order-col order-name">{{order.item}}</td>
+                        <td class="order-col order-qty">{{order.qty}}</td>
+                        <td class="order-col order-price">{{order.price}}</td>
+                    </tr>
+                    
+                    
+                    <tr class="order-row last-row">
+                        <td class="order-col order-name">Total</td>
+                        <td class="order-col order-qty">{{order_total_qty}}</td>
+                        <td class="order-col order-price">$ {{order_total_price}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buttons-section">
+                <a routerLink="/orders" class="order-btn" (click)="onSubmitOrder()">Order</a>
+                <a routerLink="/orders" class="cancel-btn" (click)="onCancelOrder()">Cancel</a>
+            </div>
+            <div class='confirm-mesage' *ngIf="this.order_sucess_message!=''">
+                <p>{{this.order_sucess_message}}</p>
+            </div>
+        </div>
+
+    </div>
+</div>

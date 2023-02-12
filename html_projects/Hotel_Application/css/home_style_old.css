@@ -1,0 +1,151 @@
+div.main-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+div.top {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: #98b15c;
+    grid-row: 1;
+    grid-column: 1 /span 12;
+    height: 10vh;
+    border-bottom: 1px solid #fff;
+}
+
+div.left {
+    background-color: rgb(64, 221, 221);
+    grid-row: 2;
+    grid-column: 1;
+    height: 90vh;
+    position:static;
+    border-right: 1px solid #fff;
+    overflow-y: auto;
+}
+
+
+div.right {
+    background-color: #a6bfd4;
+    grid-row: 2;
+    grid-column: 2 /span 11;
+    height: 90vh;
+}
+
+.body-grid{
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: auto;
+}
+
+.body-up {
+    background-color: #abc123;
+    height: 40vh;
+    border-bottom: 1px solid #fff;
+}
+
+
+.body-bottom {
+    height: 50vh;
+}
+
+div.top .col1{
+    grid-column: 1;
+}
+div.top .col2{
+    grid-column: 2 /span 4;
+    text-align: center;
+}
+
+
+
+div.top img#logo {
+    height: 40px;
+    width: 120px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+div.top h1 {
+    margin-top: 10px;
+    color: rgba(49, 28, 182, 0.5);
+}
+
+
+div.left ul a li {
+    padding: 20px 5px 20px 10px;
+    list-style: none;
+    border: 2px double rgb(109, 206, 115);
+    border-radius: 5%;
+    text-align: left;
+    font-weight: 600;
+    background-image: linear-gradient(to bottom, rgb(28, 137, 137), rgb(9, 234, 234))
+}
+
+div.left ul a{
+    text-decoration: none;
+    color: rgb(28, 6, 58);
+}
+
+div.left ul li.active {
+    background-image: linear-gradient(to bottom, rgb(175, 187, 187), rgb(96, 101, 101))
+}
+
+div.left ul li:hover {
+    background-image: linear-gradient(to bottom, rgb(175, 187, 187), rgb(96, 101, 101))
+}
+
+div.top img#profile {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background-color: #98b15c;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-right: 45px;
+    /*float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    */
+}
+
+div.top img#profile:hover {
+    background-color: #b4ca82;
+}
+
+.col3-div {
+    float: right;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+.col3-div ul li{
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+
+.dropdownmenu li {
+    padding: 6px 10px;
+    border: 1px solid #98b15c;
+    background-color: #98b15c;
+}
+
+.dropdownmenu li:hover {
+    
+    background-color: #b4ca82;
+}
+
+.dropdownmenu{
+    display: none;
+}
+
+div.col3-div ul li:hover > .dropdownmenu {
+    display: block;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Application</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/home_style.css">
+    <link rel="stylesheet" href="./css/order_history.css">
+</head>
+<body>
+    <div class="main-grid">
+        <div class="top">
+            <div class="col1">
+                <img id="logo" src="./img/Bawarchi_Logo.png" alt="logo">
+            </div>
+            <div class="col2">
+                <h1> <marquee>Welcome to Bawarchi</marquee></h1>
+            </div>
+            <div class="col3">
+                <div class="col3-div">
+                    <ul>
+                        <li>
+                            <a class="profile-link" href="#"><img class="dropdown" id="profile" src="./img/profile.png" alt="user-info"></a>
+                            <ul class="dropdownmenu">
+                                <li><a href="./profile_page.html">Profile</a></li>
+                                <li><a href="./index.html">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="left">
+            <ul>
+                <a href="./home_page.html"><li>HOME</li></a>
+                <a href="./menu_page.html"><li>MENU</li></a>
+                <a href="./order_page.html"><li>ORDER</li></a>
+                <a href="./order_history_page.html"><li  class="active">ORDER HISTORY</li></a>
+                <a href="./aboutus_page.html"><li>ABOUT US</li></a>
+                <a href="./contactus_page.html"><li>CONTACT US</li></a>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="body-grid">
+                <div class="body-up"><p>
+                    <h3>Search for Orders</h3>
+                    <table class="search-tbl">
+                        <tr class="search-tbl-row">
+                            <td class="search-tbl-col-lbl"><label for="orderFrom">Order Date From:</label></td>
+                            <td class="search-tbl-col-field"><input type="date" class="text" name="orderFrom" id="orderFrom"></td>
+                            <td class="search-tbl-col-lbl col3"><label for="orderNum">Order Number:</label></td>
+                            <td class="search-tbl-col-field"><input type="text" class="text" name="orderNum" id="orderNum"></td>
+                        </tr>
+                        <tr class="search-tbl-row">
+                            <td class="search-tbl-col-lbl"><label for="orderTo">Order Date To:</label></td>
+                            <td class="search-tbl-col-field"><input type="date" class="text" name="orderTo" id="orderTo"></td>
+                        </tr>
+                        <tr class="search-tbl-row">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="search-tbl-col-link"><a href="#" class="btn-link">Search</a></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="body-bottom">
+                    <h3>Orders are here</h3>
+                    <table class="order-tbl">
+                        <tr class="order-row first-row">
+                            <th class="order-col">S No</th>
+                            <th class="order-col">Order Number</th>
+                            <th class="order-col">Order Date</th>
+                            <th class="order-col">Order Amount</th>
+                        </tr>
+                        <tr class="order-row">
+                            <td class="order-col">1</td>
+                            <td class="order-col">12345</td>
+                            <td class="order-col">01/01/2022</td>
+                            <td class="order-col">$230</td>
+                        </tr>
+                        <tr class="order-row">
+                            <td class="order-col">2</td>
+                            <td class="order-col">12345</td>
+                            <td class="order-col">01/01/2022</td>
+                            <td class="order-col">$230</td>
+                        </tr>
+                        <tr class="order-row">
+                            <td class="order-col">3</td>
+                            <td class="order-col">12345</td>
+                            <td class="order-col">01/01/2022</td>
+                            <td class="order-col">$230</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

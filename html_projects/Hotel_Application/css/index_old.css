@@ -1,0 +1,115 @@
+
+.top {
+  /*background-color: #a8b1b8;*/
+  background: linear-gradient(to right, #83bce8, #011525);
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  /*align-items: center;
+  justify-content: center;*/
+}
+
+.left {
+  /*background-color: #6e7357;*/
+  height: 80vh;
+  display: flex;
+  width: 50%;
+  float: left;  
+  background-image: url("../img/campus.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.right {
+  background-color: #7d887e;
+  height: 80vh;
+  width: 50%;
+  float: right;
+}
+
+.bottom {
+  background-color: #4c3b5b;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+.top h1 {
+  padding-top: 10px;
+  color: rgb(179, 165, 35);
+}
+
+.logo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  height: 50px;
+  width: 120px;
+}
+
+.head-text {
+  margin-left: 80px;
+}
+
+.copy-right {
+  font-size: 0.5em;
+  color: white;
+  padding-left: 10px;
+}
+.bottom-text {
+  font-size: 0.75em;
+  color: white;
+  padding-left: 10px;
+}
+
+.user_input_form {
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+.field-label {
+  color: #112b3c;
+  font-style:oblique;
+  text-decoration: underline;
+  background-color: #d1c869;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 35%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.login {
+  background-color: #062336;
+  color: white;
+}
+
+.reset {
+  background-color: #062336;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #112b3c;
+}
+

@@ -1,0 +1,40 @@
+.about {
+    margin: 10px 0px 0px 10px;
+}
+
+.team {
+    margin: 10px 0px 0px 10px;
+}
+
+.about h4 {
+    text-decoration: underline;
+    font-weight: 600;
+    color: rgb(9, 72, 22);
+    margin-bottom: 5px;
+}
+.about p {
+    color: rgb(98, 98, 216);
+    padding-top: 1opx;
+}
+
+.team ul li {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.team ul li h5{
+    text-decoration: underline;
+    font-weight: 600;
+    color: rgb(9, 72, 22);
+    margin-bottom: 5px;
+}
+
+.team ul li img{
+    height: 180px;
+    width: 150px;
+}
+
+.team ul li p{
+    color: rgb(98, 98, 216);
+    padding-top: 1opx;
+}

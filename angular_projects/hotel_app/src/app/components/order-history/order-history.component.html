@@ -1,0 +1,60 @@
+<div class="main-grid">
+    <div class="top">
+        <div class="col1">
+            <app-top-image></app-top-image>
+        </div>
+        <div class="col2">
+            <app-top-text></app-top-text>
+        </div>
+        <div class="col3">
+           <app-topsection></app-topsection>
+        </div>>
+    </div>
+    <app-leftmenu menu="ORDER HISTORY"></app-leftmenu>
+   
+    <div class="right">
+        <div class="body-grid">
+            <div class="body-up" [formGroup]="searchFormGroup">
+                <h3>Search for Orders</h3>
+                <table class="search-tbl">
+                    <tr class="search-tbl-row">
+                        <td class="search-tbl-col-lbl"><label for="orderFrom">Order Date From:</label></td>
+                        <td class="search-tbl-col-field"><input type="date" class="text" name="orderFrom" id="orderFrom" formControlName="orderFromDate"></td>
+                        <td class="search-tbl-col-lbl col3"><label for="orderNum">Order Number:</label></td>
+                        <td class="search-tbl-col-field"><input type="text" class="text" name="orderNum" id="orderNum" formControlName="orderNumber"></td>
+                    </tr>
+                    <tr class="search-tbl-row">
+                        <td class="search-tbl-col-lbl"><label for="orderTo">Order Date To:</label></td>
+                        <td class="search-tbl-col-field"><input type="date" class="text" name="orderTo" id="orderTo" formControlName="orderToDate"></td>
+                    </tr>
+                    <tr class="search-tbl-row">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="search-tbl-col-link"><a routerLink="/orderhistory" class="btn-link" (click)="onSearch()">Search</a></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="body-bottom">
+                <h3>Orders are here</h3>
+                <table class="order-tbl">
+                    <tr class="order-row first-row">
+                        <th class="order-col">S No</th>
+                        <th class="order-col">Order Number</th>
+                        <th class="order-col">Order Date</th>
+                        <th class="order-col">Order Amount</th>
+                    </tr>
+                    <tr class="order-row" *ngFor="let order of order_history">
+                        <td class="order-col">{{order.sno}}</td>
+                        <td class="order-col">{{order.orderNumber}}</td>
+                        <td class="order-col">{{order.orderDate}}</td>
+                        <td class="order-col">{{order.orderAmount}}</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>

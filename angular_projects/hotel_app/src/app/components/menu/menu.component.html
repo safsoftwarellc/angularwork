@@ -1,0 +1,45 @@
+<div class="main-grid">
+    <div class="top">
+        <div class="col1">
+            <app-top-image></app-top-image>
+        </div>
+        <div class="col2">
+            <app-top-text></app-top-text>
+        </div>
+        <div class="col3">
+           <app-topsection></app-topsection>
+        </div>>
+    </div>
+    <app-leftmenu menu="MENU"></app-leftmenu>
+    
+    <div class="right">
+        <div class="body-grid">
+            <h2>Bawarchi Menu</h2>
+            <div class="veg">
+                <h3>Vegiterian</h3>
+                <ul>
+                    <li class="list-item" *ngFor="let item of veg_items">
+                        <span class="item">{{item.name}}</span>
+                        <span class="price"> - ({{item.price}})</span>
+                        <a class="add-link" [routerLink]="" routerLinkActive="active" (click)="updateOrder(item.name, item.price)">Add to Order</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="non-veg">
+                <h3>Chicken</h3>
+                <ul>
+                    <span *ngFor="let item of NonVeg_items">
+                        <li class="list-item">
+                            <span class="item">{{item.name}}</span>
+                            <span class="price"> - ({{item.price}})</span>
+                            <a class="add-link" [routerLink]="" routerLinkActive="active" (click)="updateOrder(item.name, item.price)">Add to Order</a>
+                        </li>
+                    </span>
+                </ul>
+            </div>
+
+            <h2 class="bottom-message">Call us for Phone Orders +1-704-496-3344</h2>
+        </div>
+
+    </div>
+</div>

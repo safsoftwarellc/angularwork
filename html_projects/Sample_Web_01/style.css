@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url("img/campus.jpg");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
+
+.main {
+    float: right;
+}
+
+.heading{
+    margin-top: 200px;
+    margin-right: 250px;
+    background-color: rgb(70, 22, 175);
+}

@@ -1,0 +1,50 @@
+<div class="main-grid">
+    <div class="top">
+        <div class="col1">
+            <app-top-image></app-top-image>
+        </div>
+        <div class="col2">
+            <app-top-text></app-top-text>
+        </div>
+        <div class="col3">
+           <app-topsection></app-topsection>
+        </div>>
+    </div>
+    <app-leftmenu menu="CONTACT US"></app-leftmenu>
+    
+    <div class="right">
+        <div class="body-grid">
+            <h3>Send Message to Team</h3>
+            <div *ngIf="message!=''" class="status-message">
+                <p>{{message}}</p>
+            </div>
+            <div *ngIf="messageSuccess!=''" class="success-message">
+                <p>{{messageSuccess}}</p>
+            </div>
+            
+            <form [formGroup]="contactUsForm" (ngSubmit)="onFormSubmit()">
+                <table>
+                    <tr>
+                        <td><label for="from">From:</label></td>
+                        <td><input class="form-field" type="text" name="from" id="from" formControlName="from"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subject">Subject:</label></td>
+                        <td><input class="form-field" type="text" name="subject" id="subject" formControlName="subject"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message:</label></td>
+                        <td><textarea class="form-field" name="message" id="message" cols="30" rows="10" formControlName="message"></textarea></td>
+                    </tr>
+                </table>
+                <div class="btn-area">
+                    <button class="btn send" type="submit">Send Message</button>
+                    <button class="btn reset" type="reset">Cancel</button>
+                </div>
+                
+            </form>
+            
+        </div>
+
+    </div>
+</div>

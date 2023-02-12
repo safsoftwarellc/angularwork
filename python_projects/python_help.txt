@@ -1,0 +1,17 @@
+
+brew install python3
+pip3 install virtualenv
+
+python<version> -m venv <virtual-environment-name>
+python3 -m venv hotel_env
+
+. bin/activate
+deactivate
+
+pip install Flask
+
+pip freeze > requirements.txt
+~ pip install -r requirements.txt
+
+Run Flask App in Debug 
+    flask --app hotel_app.py --debug run

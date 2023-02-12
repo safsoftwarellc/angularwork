@@ -1,0 +1,32 @@
+.userinfo {
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  
+  .userinfo h3 {
+    color: #2616b3;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  
+  .userinfo table {
+    color: #4636de;
+    margin-left: 8%;
+    margin-top: 2%;
+  }
+  
+  .userinfo table tr td{
+    border: 1px solid #098f3e;
+    padding: 10px 0px 10px;
+  }
+  
+  .tbl-label{
+    width: 40%;
+    text-align: right;
+  }
+  
+  .tbl-data{
+    width: 30%;
+    text-align: left;
+    padding-left: 20px !important;
+  }

@@ -1,0 +1,135 @@
+.split {
+    display: flex;
+    background-color: #f0ffff;
+}
+
+.split:hover {
+    background-color: #c6d3d3;
+}
+
+.toparea{
+    height: 15vh;
+    width: 100%;
+    border-bottom: 1px solid #358989;
+}
+
+.loginarea {
+    height: 75vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bottomarea {
+    height: 10vh;
+    width: 100%;
+    flex-direction: column;
+    border-top: 1px solid #358989;
+}
+
+.toparea img{
+    height: 60px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.toparea h1{
+    margin-left: 80px;
+    margin-top: 40px;
+    color: rgb(33, 33, 151);
+}
+
+.copyrighttext {
+    font-size: 0.60em;
+    font-weight: 600;
+    margin-left: 10px;
+    color: blue;
+}
+
+.bottomtext {
+    font-size: 0.5em;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: blue;
+}
+
+.loginsection {
+    /*border: 5px double #07012d;*/
+    border: 5px double #7fc4d2;
+    border-style: double;
+    border-radius: 5%;
+    padding: 35px;
+    margin: 5px;
+    background-color: #488e9c;
+}
+
+.loginsection:hover {
+    background-color: #0a7d91;
+}
+
+.signintext {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.signintext h3{
+    color: rgb(33, 33, 151);
+    text-decoration: underline;
+}
+
+.form-label {
+    color: rgb(53, 20, 119);
+    background-color: rgb(239, 227, 94);
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.form-label-row {
+    margin-top: 10px;
+}
+
+
+.form-field {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #1c0535;
+    font-size: 12px;
+}
+
+.btn {
+    width: 45%;
+    background-color: #062336;
+    color: white;
+    padding: 8px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .btn:hover {
+    background-color: #112b3c;
+  }
+
+  .login {
+    margin-right: 10px;
+  }
+
+  .reset {
+    margin-left: 10px;
+  }
+.errortext{
+    color: #941b25;
+    text-align: center;
+    font-weight: 600;
+}

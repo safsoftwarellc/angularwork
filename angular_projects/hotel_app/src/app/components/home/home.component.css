@@ -1,0 +1,30 @@
+.maininfo {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.maininfo p {
+    margin-top: 10px;;
+}
+div.address {
+    margin-top: 10px;
+    color: blue;
+}
+
+.contactus {
+    margin-top: 20px;
+    color: blueviolet;
+}
+
+.contactus h3 {
+    margin-top: 20px;
+}
+
+.someimg {
+    background-image: radial-gradient(#5e55ae, #889e3c, #064f06);
+    height: 250px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 37%;
+    border-radius: 10px;
+}

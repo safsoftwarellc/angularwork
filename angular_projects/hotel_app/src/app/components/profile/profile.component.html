@@ -1,0 +1,49 @@
+<div class="main-grid">
+    <div class="top">
+        <div class="col1">
+            <app-top-image></app-top-image>
+        </div>
+        <div class="col2">
+            <app-top-text></app-top-text>
+        </div>
+        <div class="col3">
+           <app-topsection></app-topsection>
+        </div>>
+    </div>
+    <app-leftmenu menu="PROfILE"></app-leftmenu>
+    <div class="right">
+        <div class="body-grid">
+            <div class="userinfo">
+                <h3>User Information:</h3>
+                <table >
+                    <tr>
+                        <td class="tbl-label"><span>First Name:</span></td>
+                        <td class="tbl-data"><span>{{profile.firstName}}</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tbl-label"><span>Last Name:</span></td>
+                        <td class="tbl-data"><span>{{profile.lastName}}</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tbl-label"><span>DOB:</span></td>
+                        <td class="tbl-data"><span>{{profile.DOB}}</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tbl-label"><span>Gender:</span></td>
+                        <td class="tbl-data"><span>{{profile.gender}}</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tbl-label"><span>Email:</span></td>
+                        <td class="tbl-data"><span>{{profile.email}}</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tbl-label"><span>Phone:</span></td>
+                        <td class="tbl-data"><span>{{profile.phone}}</span></td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
