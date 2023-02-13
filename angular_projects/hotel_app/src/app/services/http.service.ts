@@ -34,6 +34,7 @@ export interface StatusInfo {
 })
 export class HttpService{
     serverUri: string ='http://127.0.0.1:5000';
+    //serverUri: string ='${API_URL}';
 
     constructor(private http: HttpClient, @Inject(LOCALE_ID) private locale: string){}
 
